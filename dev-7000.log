@@ -1,0 +1,18 @@
+
+> gadgethub-frontend@0.1.0 dev
+> vinext dev --port 7000
+
+
+  vinext dev  (Vite 8.0.13)
+
+[2m23:39:19[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m Re-optimizing dependencies because vite config has changed
+[2m23:39:19[22m [36m[1m[vite][22m[39m [34m[2m(rsc)[22m[39m Re-optimizing dependencies because vite config has changed
+[2m23:39:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m7000[22m/[39m
+  [32m➜[39m  [1mDebug[22m:   [2m[33mhttp://localhost:[1m7000[22m[2m/__debug[39m[22m
+[2m23:39:40[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32m✨ new dependencies optimized: [33mzod[32m[39m
+[2m23:39:40[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[vite] program reload
+ GET / 500 in 5.7s
+[2m23:39:52[22m [36m[1m[vite][22m[39m [34m[2m(rsc)[22m[39m [32mhmr update [39m[2m/app/globals.css[22m
+ GET / 200 in 825ms (compile: 1786570752.0s, render: 535ms)
