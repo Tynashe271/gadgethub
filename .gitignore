@@ -1,0 +1,6 @@
+# OS / editor clutter (subprojects have their own .gitignore for build artifacts, deps, env files)
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+*.swp

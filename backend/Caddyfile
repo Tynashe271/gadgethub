@@ -1,0 +1,6 @@
+{$DOMAIN:api.tinashenyenyesatech.ac.zw} {
+  encode zstd gzip
+  reverse_proxy api:4000
+  header Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  log
+}

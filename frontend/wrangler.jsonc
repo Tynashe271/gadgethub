@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gadgethub-frontend",
+  "account_id": "5b3d9474ff7920f000574985ec971b1f",
+  "vars": {
+    // Public API base URL the storefront calls. Point this at the deployed
+    // backend (Railway) once it has a public URL.
+    "NEXT_PUBLIC_API_URL": "https://gadgethub-api-production.up.railway.app/api/v1"
+  }
+}

@@ -1,0 +1,12 @@
+env:
+  contexts:
+    - name: GadgetHub
+      urls: ["http://host.docker.internal:4000"]
+jobs:
+  - type: spider
+    parameters: { context: GadgetHub, maxDuration: 5 }
+  - type: passiveScan-wait
+  - type: activeScan
+    parameters: { context: GadgetHub, maxRuleDurationInMins: 2 }
+  - type: report
+    parameters: { template: traditional-html, reportDir: /zap/wrk, reportFile: security-report.html }
