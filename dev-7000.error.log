@@ -1,0 +1,176 @@
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
+  C:/Users/Vicario/Desktop/GadgetHub/frontend/app/api.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/chatgpt-auth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/config.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/page.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/StoreApp.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/worker/index.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/context/StoreContext.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ErrorBoundary.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/Navigation.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ProductDialog.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ProductGrid.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/Toast.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useAuth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useCart.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useDebounce.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useNotification.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Account.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Cart.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Compare.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Finder.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Footer.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Home.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Services.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Shop.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/auth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/checkout.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/finder.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/services.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/types/index.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/apiClient.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/storage.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/test-utils.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/__tests__/ProductGrid.test.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/__tests__/schemas.test.ts
+
+  [31mBuild failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected `>` but found `Identifier`
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/__tests__/ProductGrid.test.ts:21:9 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m21 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0mproducts[38;5;249m=[0m[38;5;249m{[0m[38;5;249m[[0m[38;5;249mm[0m[38;5;249mo[0m[38;5;249mc[0m[38;5;249mk[0m[38;5;249mP[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249m][0m[38;5;249m}[0m
+ [38;5;240m   │[0m         ────┬───  
+ [38;5;240m   │[0m             ╰───── `>` expected
+[38;5;246m────╯[0m
+
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/shared/error-CkdMJ9ps.mjs:48:18)
+    at unwrapBindingResult (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/shared/error-CkdMJ9ps.mjs:18:128)
+    at scan (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/experimental-index.mjs:176:3)
+    at async Object.build (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:30826:3)
+    at async scan (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:30771:4)
+    at async file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:23242:15[39m
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
+  C:/Users/Vicario/Desktop/GadgetHub/frontend/app/api.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/chatgpt-auth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/config.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/page.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/StoreApp.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/worker/index.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ErrorBoundary.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/Navigation.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ProductDialog.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ProductGrid.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/Toast.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/context/StoreContext.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useAuth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useCart.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useDebounce.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useNotification.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Account.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Cart.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Compare.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Finder.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Footer.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Home.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Services.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Shop.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/auth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/checkout.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/finder.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/services.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/types/index.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/apiClient.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/storage.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/test-utils.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/__tests__/ProductGrid.test.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/__tests__/schemas.test.ts
+
+  [31mBuild failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected `>` but found `Identifier`
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/__tests__/ProductGrid.test.ts:21:9 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m21 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0mproducts[38;5;249m=[0m[38;5;249m{[0m[38;5;249m[[0m[38;5;249mm[0m[38;5;249mo[0m[38;5;249mc[0m[38;5;249mk[0m[38;5;249mP[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249m][0m[38;5;249m}[0m
+ [38;5;240m   │[0m         ────┬───  
+ [38;5;240m   │[0m             ╰───── `>` expected
+[38;5;246m────╯[0m
+
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/shared/error-CkdMJ9ps.mjs:48:18)
+    at unwrapBindingResult (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/shared/error-CkdMJ9ps.mjs:18:128)
+    at scan (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/experimental-index.mjs:176:3)
+    at async Object.build (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:30826:3)
+    at async scan (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:30771:4)
+    at async file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:23242:15[39m
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
+  C:/Users/Vicario/Desktop/GadgetHub/frontend/app/api.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/chatgpt-auth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/config.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/page.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/StoreApp.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ErrorBoundary.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/Navigation.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ProductDialog.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/ProductGrid.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/components/Toast.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/context/StoreContext.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useAuth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useCart.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useDebounce.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/hooks/useNotification.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Account.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Cart.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Compare.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Finder.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Footer.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Home.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Services.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/pages/Shop.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/auth.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/checkout.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/finder.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/schemas/services.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/types/index.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/apiClient.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/storage.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/utils/test-utils.tsx
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/__tests__/ProductGrid.test.ts
+C:/Users/Vicario/Desktop/GadgetHub/frontend/app/__tests__/schemas.test.ts
+
+  [31mBuild failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected `>` but found `Identifier`
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/__tests__/ProductGrid.test.ts:21:9 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m21 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0mproducts[38;5;249m=[0m[38;5;249m{[0m[38;5;249m[[0m[38;5;249mm[0m[38;5;249mo[0m[38;5;249mc[0m[38;5;249mk[0m[38;5;249mP[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249m][0m[38;5;249m}[0m
+ [38;5;240m   │[0m         ────┬───  
+ [38;5;240m   │[0m             ╰───── `>` expected
+[38;5;246m────╯[0m
+
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/shared/error-CkdMJ9ps.mjs:48:18)
+    at unwrapBindingResult (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/shared/error-CkdMJ9ps.mjs:18:128)
+    at scan (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/rolldown/dist/experimental-index.mjs:176:3)
+    at async Object.build (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:30826:3)
+    at async scan (file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:30771:4)
+    at async file:///C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/vite/dist/node/chunks/node.js:23242:15[39m
+Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[2m23:39:42[22m [31m[1m[vite][22m[39m [31mInternal server error: Cannot read properties of null (reading 'useContext')[39m
+      at exports.useContext (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react.js?v=f9cf6ad7:706:22)
+      at useStore (C:/Users/Vicario/Desktop/GadgetHub/frontend/app/context/StoreContext.tsx:249:19)
+      at StoreApp (C:/Users/Vicario/Desktop/GadgetHub/frontend/app/StoreApp.tsx:39:231)
+      at Object.react_stack_bottom_frame (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react-dom-server.edge.development-DnFjSFwK.js?v=354f2220:5310:11)
+      at renderWithHooks (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react-dom-server.edge.development-DnFjSFwK.js?v=354f2220:2796:19)
+      at renderElement (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react-dom-server.edge.development-DnFjSFwK.js?v=354f2220:2934:17)
+      at renderElement (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react-dom-server.edge.development-DnFjSFwK.js?v=354f2220:3234:7)
+      at retryNode (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react-dom-server.edge.development-DnFjSFwK.js?v=354f2220:3363:285)
+      at performWork (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react-dom-server.edge.development-DnFjSFwK.js?v=354f2220:3855:9)
+      at null.<anonymous> (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/.vite/deps_ssr/react-dom-server.edge.development-DnFjSFwK.js?v=354f2220:2472:12)
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.

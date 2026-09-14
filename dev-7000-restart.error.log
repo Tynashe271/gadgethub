@@ -1,0 +1,489 @@
+[2m23:41:23[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx:68:17
+[2m23:41:33[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx:68:17
+[2m23:43:31[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786571009624:68:17
+[2m23:43:32[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786571009624:68:17
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+[2m23:44:46[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786571009624:68:17
+[2m23:45:42[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786571141153:69:17
+[2m23:45:43[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786571141153:69:17
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+[2m07:44:41[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786571141153:69:17
+[2m07:44:41[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load user: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786571141153:55:21
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+[2m10:16:02[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786608702394:198:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608702394:26:225)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m10:16:02[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608702394:26:225)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959952:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m10:16:02[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786608702394:198:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608702394:26:225)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608702394:26:225)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959952:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+[2m10:16:03[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959972:198:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m10:16:03[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959952:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m10:16:03[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959972:198:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959952:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+[2m10:16:47[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959972:198:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m10:16:47[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959952:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m10:16:47[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959972:198:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786608959998:26:225)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786608959952:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+[2m11:08:38[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load user: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786612112856:66:21
+    at async initialize (http://localhost:7000/app/context/StoreContext.tsx?t=1786612112856:36:5)
+[2m11:08:38[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load products: ApiException: Failed to fetch
+    at api (http://localhost:7000/app/utils/apiClient.ts:29:9)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786612112856:86:17
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+[2m13:51:31[22m [31m[1m[vite][22m[39m [31mInternal server error: Network connection lost.[39m
+      at runInRunnerObject (workers/runner-worker/index.js:107:3)
+      at Object.load (C:/Users/Vicario/Desktop/GadgetHub/frontend/node_modules/@vitejs/plugin-rsc/dist/ssr.js?v=f9cf6ad7:21:4)
+[2m13:53:26[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m13:53:26[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002217:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m13:53:26[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002217:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+[2m13:53:35[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m13:53:35[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002217:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m13:53:35[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622002262:28:248)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002217:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+[2m13:54:41[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m13:54:41[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002217:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m13:54:41[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002217:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+[2m14:04:00[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m14:04:00[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622637997:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m14:04:00[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622002262:211:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622078760:28:248)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622637997:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+[2m14:04:01[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622637931:205:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622637931:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6)
+[2m14:04:01[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mThe above error occurred in a React component:
+
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622637931:28:248)
+    at Home [Server] (<anonymous>)
+    at AwaitAppRenderDependencies [Server] (<anonymous>)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)
+    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622638013:12:33)
+    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)
+    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)
+    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)
+    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)
+    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)
+    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)
+    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)
+[2m14:04:01[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError caught by boundary: Error: useStore must be used within StoreProvider
+    at useStore (http://localhost:7000/app/context/StoreContext.tsx?t=1786622637931:205:9)
+    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622637931:28:248)
+    at Object.react_stack_bottom_frame (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:12868:12)
+    at renderWithHooks (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:4213:19)
+    at updateFunctionComponent (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:5569:16)
+    at beginWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:6120:628)
+    at runWithFiberInDEV (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:851:66)
+    at performUnitOfWork (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8429:92)
+    at workLoopSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8325:37)
+    at renderRootSync (http://localhost:7000/node_modules/.vite/deps/react-dom_client.js?v=9946939e:8309:6) {"componentStack":"\n    at StoreApp (http://localhost:7000/app/StoreApp.tsx?t=1786622637931:28:248)\n    at Home [Server] (<anonymous>)\n    at AwaitAppRenderDependencies [Server] (<anonymous>)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at Children (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:64:17)\n    at StoreProvider (http://localhost:7000/app/context/StoreContext.tsx?t=1786622638013:12:33)\n    at ErrorBoundary (http://localhost:7000/app/components/ErrorBoundary.tsx:8:3)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at RootLayout [Server] (<anonymous>)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at default (about://React/Server/C:/Users/Vicario/Desktop/GadgetHub/frontend/app/layout.tsx?1:78:26)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at LayoutSegmentProvider (http://localhost:7000/node_modules/vinext/dist/shims/layout-segment-context.js?v=9946939e:32:34)\n    at Slot (http://localhost:7000/node_modules/vinext/dist/shims/slot.js?v=9946939e:42:17)\n    at NavigationCommitSignal (http://localhost:7000/node_modules/vinext/dist/server/app-browser-navigation-controller.js?v=9946939e:184:36)\n    at RedirectErrorBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:56:3)\n    at RedirectBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:86:29)\n    at DevRecoveryBoundary (http://localhost:7000/node_modules/vinext/dist/shims/error-boundary.js?v=9946939e:268:3)\n    at BrowserRoot (http://localhost:7000/node_modules/vinext/dist/server/app-browser-entry.js?v=9946939e:209:24)"}
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+[2m14:12:09[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mFailed to load user: ApiException: Internal server error
+    at api (http://localhost:7000/app/utils/apiClient.ts:23:10)
+    at async http://localhost:7000/app/context/StoreContext.tsx?t=1786622637931:66:21
+    at async initialize (http://localhost:7000/app/context/StoreContext.tsx?t=1786622637931:36:5)
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
