@@ -57,33 +57,53 @@ class _CustomerAppState extends State<CustomerApp> {
         theme: gadgetTheme(),
         home: ready
             ? CustomerExperience(api: api)
-            : Scaffold(
-                body: Center(
-                  child: startupError == null
-                      ? const CircularProgressIndicator()
-                      : Padding(
-                          padding: const EdgeInsets.all(24),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              const Icon(Icons.cloud_off,
-                                  size: 52, color: acid),
-                              const SizedBox(height: 16),
-                              const Text('Could not connect to GadgetHub',
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold)),
-                              const SizedBox(height: 8),
-                              Text('$startupError',
-                                  textAlign: TextAlign.center),
-                              const SizedBox(height: 20),
-                              FilledButton(
-                                  onPressed: _initialize,
-                                  child: const Text('Try again')),
-                            ],
-                          ),
+            : startupError == null
+                ? const LoadingScreen()
+                : Scaffold(
+                    body: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(24),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(Icons.cloud_off, size: 52, color: acid),
+                            const SizedBox(height: 16),
+                            const Text('Could not connect to GadgetHub',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold)),
+                            const SizedBox(height: 8),
+                            Text('$startupError', textAlign: TextAlign.center),
+                            const SizedBox(height: 20),
+                            FilledButton(
+                                onPressed: _initialize,
+                                child: const Text('Try again')),
+                          ],
                         ),
-                ),
-              ),
+                      ),
+                    ),
+                  ),
       );
+}
+
+class LoadingScreen extends StatelessWidget {
+  const LoadingScreen({super.key});
+  @override
+  Widget build(BuildContext context) => Scaffold(
+      backgroundColor: ink,
+      body: Center(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+        Container(
+            width: 72,
+            height: 72,
+            decoration: const BoxDecoration(color: acid, shape: BoxShape.circle),
+            alignment: Alignment.center,
+            child: const Text('G/H',
+                style: TextStyle(
+                    color: ink, fontSize: 22, fontWeight: FontWeight.w900))),
+        const SizedBox(height: 24),
+        const SizedBox(
+            width: 26,
+            height: 26,
+            child: CircularProgressIndicator(strokeWidth: 2.6, color: acid)),
+      ])));
 }

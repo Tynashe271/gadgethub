@@ -15,13 +15,27 @@ class AdminApp extends StatefulWidget {
 class _AdminAppState extends State<AdminApp> {
   final api = AdminApi();
   bool ready = false;
+  bool entered = false;
+  bool _wasSignedIn = false;
   @override
   void initState() {
     super.initState();
+    api.addListener(_onApiChange);
     () async {
       await api.restore();
       if (mounted) setState(() => ready = true);
     }();
+  }
+
+  @override
+  void dispose() {
+    api.removeListener(_onApiChange);
+    super.dispose();
+  }
+
+  void _onApiChange() {
+    if (_wasSignedIn && !api.signedIn) setState(() => entered = false);
+    _wasSignedIn = api.signedIn;
   }
 
   @override
@@ -32,10 +46,118 @@ class _AdminAppState extends State<AdminApp> {
           title: 'GadgetHub Admin',
           theme: adminTheme(api.darkMode ? Brightness.dark : Brightness.light),
           home: !ready
-              ? const Scaffold(body: Center(child: CircularProgressIndicator()))
-              : api.signedIn
-                  ? AdminShell(api: api)
-                  : LoginScreen(api: api)));
+              ? const LoadingScreen()
+              : !entered
+                  ? LandingScreen(
+                      onContinue: () => setState(() => entered = true))
+                  : api.signedIn
+                      ? AdminShell(api: api)
+                      : LoginScreen(api: api)));
+}
+
+class LoadingScreen extends StatelessWidget {
+  const LoadingScreen({super.key});
+  @override
+  Widget build(BuildContext context) => Scaffold(
+      backgroundColor: charcoal,
+      body: Center(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+        Container(
+            width: 72,
+            height: 72,
+            decoration:
+                const BoxDecoration(color: lime, shape: BoxShape.circle),
+            alignment: Alignment.center,
+            child: const Text('G/H',
+                style: TextStyle(
+                    color: charcoal,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w900))),
+        const SizedBox(height: 24),
+        const SizedBox(
+            width: 26,
+            height: 26,
+            child: CircularProgressIndicator(strokeWidth: 2.6, color: lime)),
+      ])));
+}
+
+class LandingScreen extends StatelessWidget {
+  final VoidCallback onContinue;
+  const LandingScreen({super.key, required this.onContinue});
+  @override
+  Widget build(BuildContext context) => Scaffold(
+      backgroundColor: charcoal,
+      body: SafeArea(
+          child: Center(
+              child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 420),
+                  child: Padding(
+                      padding: const EdgeInsets.all(28),
+                      child: Column(mainAxisSize: MainAxisSize.min, children: [
+                        Container(
+                            width: 92,
+                            height: 92,
+                            decoration: const BoxDecoration(
+                                color: lime, shape: BoxShape.circle),
+                            alignment: Alignment.center,
+                            child: const Text('G/H',
+                                style: TextStyle(
+                                    color: charcoal,
+                                    fontSize: 28,
+                                    fontWeight: FontWeight.w900))),
+                        const SizedBox(height: 28),
+                        const Text('Welcome to\nGadgetHub Admin.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                fontSize: 34,
+                                height: .98,
+                                letterSpacing: -1.2,
+                                fontWeight: FontWeight.w900)),
+                        const SizedBox(height: 14),
+                        const Text(
+                            'Commerce, inventory, customers and operations in one command center.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.grey, fontSize: 15, height: 1.5)),
+                        const SizedBox(height: 30),
+                        const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              _TrustBadge(
+                                  icon: Icons.lock_outline,
+                                  label: 'Secure access'),
+                              SizedBox(width: 22),
+                              _TrustBadge(
+                                  icon: Icons.admin_panel_settings_outlined,
+                                  label: 'Role-based'),
+                              SizedBox(width: 22),
+                              _TrustBadge(
+                                  icon: Icons.fact_check_outlined,
+                                  label: 'Audit logged'),
+                            ]),
+                        const SizedBox(height: 34),
+                        SizedBox(
+                            width: double.infinity,
+                            child: FilledButton(
+                                onPressed: onContinue,
+                                style: FilledButton.styleFrom(
+                                    minimumSize: const Size(0, 52)),
+                                child: const Text('Continue to sign in →'))),
+                      ]))))));
+}
+
+class _TrustBadge extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  const _TrustBadge({required this.icon, required this.label});
+  @override
+  Widget build(BuildContext context) => Column(children: [
+        Icon(icon, color: lime, size: 20),
+        const SizedBox(height: 6),
+        Text(label,
+            style: const TextStyle(
+                fontSize: 10, color: Colors.grey, letterSpacing: .3))
+      ]);
 }
 
 class LoginScreen extends StatefulWidget {

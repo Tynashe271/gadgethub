@@ -4,3 +4,4 @@
 build/
 android/local.properties
 ios/Flutter/ephemeral/
+flutter_*.log
