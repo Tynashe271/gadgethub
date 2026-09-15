@@ -3,7 +3,7 @@
 
 import { FormEvent, useMemo, useState } from 'react';
 import { api } from '../utils/apiClient';
-import type { Order, Product } from '@/types';
+import type { Order, Product, View } from '@/types';
 
 const marks: Record<string, string> = {
   Phones: '◫',
@@ -33,7 +33,7 @@ interface CartProps {
   products: Product[];
   onRemove: (id: string) => void;
   onChangeQuantity: (product: Product, delta: number) => void;
-  onNavigate: (view: string) => void;
+  onNavigate: (view: View) => void;
   isAuthenticated: boolean;
   onCheckout: () => void;
   onContinueShopping: () => void;
@@ -125,7 +125,7 @@ export function Cart({
             method: 'POST',
             body: JSON.stringify({ addressId, paymentMethod, deliveryMethod: 'STANDARD', deliveryFee, couponCode: couponCode.trim() || undefined }),
           });
-          const payment = order.payments?.[0];
+          const payment = order.payments?.[0] as { id?: string } | undefined;
           if (!payment?.id) throw new Error('Order payment was not created');
           checkout = { orderNumber: order.orderNumber, paymentId: payment.id };
           setPendingOrder(checkout);

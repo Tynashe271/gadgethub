@@ -59,7 +59,7 @@ export function ProductDialog({
               loading="lazy"
             />
           ) : (
-            <span>{marks[product.category?.name] || '◆'}</span>
+            <span>{marks[product.category?.name ?? ''] || '◆'}</span>
           )}
         </div>
         <div className="detail-copy">

@@ -87,7 +87,7 @@ export function Account({ user, token, onLogin, onLogout, onNotification, onUser
       onNotification(mode === 'register' ? `Welcome to GadgetHub, ${result.user.firstName}!` : `Welcome back, ${result.user.firstName}!`);
     } catch (error) {
       if (error instanceof ZodError) {
-        const fields = error.flatten().fieldErrors;
+        const fields = error.flatten().fieldErrors as Record<string, string[] | undefined>;
         setErrors(Object.fromEntries(Object.entries(fields).map(([key, messages]) => [key, messages?.[0] || 'Invalid value'])));
       } else if (error instanceof ApiException && error.status === 0) {
         const email = String(data.email || '').toLowerCase();

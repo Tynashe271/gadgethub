@@ -14,7 +14,7 @@ export const addressSchema = z.object({
 export const checkoutSchema = z.object({
   addressId: z.string().min(1, 'Select a delivery address'),
   paymentMethod: z.enum(['CARD', 'TRANSFER', 'CASH'], {
-    errorMap: () => ({ message: 'Select a valid payment method' }),
+    error: 'Select a valid payment method',
   }),
   deliveryMethod: z.string().min(1, 'Select a delivery method'),
   couponCode: z.string().optional(),

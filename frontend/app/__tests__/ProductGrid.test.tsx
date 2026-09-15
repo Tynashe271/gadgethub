@@ -1,5 +1,5 @@
 // app/__tests__/ProductGrid.test.ts
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '../utils/test-utils';
 import { ProductGrid } from '../components/ProductGrid';
 import type { Product } from '@/types';
