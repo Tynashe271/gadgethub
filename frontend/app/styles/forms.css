@@ -65,22 +65,12 @@ legend {
   margin-bottom: 16px;
 }
 
-/* Toast improvements */
+/* Toast improvements (layout only — position/color/box come from globals.css's .toast) */
 .toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #1f2937;
-  color: white;
-  padding: 12px 16px;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  max-width: 300px;
-  z-index: 1000;
   animation: slideIn 0.3s ease;
 }
 
@@ -124,13 +114,6 @@ legend {
 
 /* Mobile responsiveness */
 @media (max-width: 640px) {
-  .toast {
-    bottom: 10px;
-    right: 10px;
-    left: 10px;
-    max-width: none;
-  }
-
   input,
   textarea,
   select {
