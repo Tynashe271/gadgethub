@@ -63,7 +63,8 @@ class _CustomerExperienceState extends State<CustomerExperience> {
             return LandingScreen(
                 onExplore: () => setState(() => entered = true),
                 onSignIn: () => setState(() => authOpen = true),
-                onFinder: () => open(CustomerPage.finder));
+                onFinder: () => open(CustomerPage.finder),
+                onNavigate: open);
           }
           return AppFrame(
               api: widget.api,
@@ -76,17 +77,23 @@ class _CustomerExperienceState extends State<CustomerExperience> {
 
 class LandingScreen extends StatelessWidget {
   final VoidCallback onExplore, onSignIn, onFinder;
+  final ValueChanged<CustomerPage> onNavigate;
   const LandingScreen(
       {super.key,
       required this.onExplore,
       required this.onSignIn,
-      required this.onFinder});
+      required this.onFinder,
+      required this.onNavigate});
 
   @override
   Widget build(BuildContext context) => Scaffold(
         body: ListView(children: [
           const Announcement(),
-          SiteHeader(onHome: () {}, onSignIn: onSignIn, onCart: onExplore),
+          SiteHeader(
+              onHome: () {},
+              onSignIn: onSignIn,
+              onCart: onExplore,
+              onNavigate: onNavigate),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: Center(
@@ -250,11 +257,21 @@ class Announcement extends StatelessWidget {
 
 class SiteHeader extends StatelessWidget {
   final VoidCallback onHome, onSignIn, onCart;
+  final ValueChanged<CustomerPage> onNavigate;
   const SiteHeader(
       {super.key,
       required this.onHome,
       required this.onSignIn,
-      required this.onCart});
+      required this.onCart,
+      required this.onNavigate});
+  static const _navItems = {
+    'Shop': CustomerPage.shop,
+    'Phone Finder': CustomerPage.finder,
+    'AI Assistant': CustomerPage.assistant,
+    'Rate Us': CustomerPage.feedback,
+    'Compare': CustomerPage.compare,
+    'Services': CustomerPage.services,
+  };
   @override
   Widget build(BuildContext context) => Container(
       height: 86,
@@ -268,19 +285,15 @@ class SiteHeader extends StatelessWidget {
                 InkWell(onTap: onHome, child: const Brand()),
                 const Spacer(),
                 if (MediaQuery.sizeOf(context).width > 850) ...[
-                  for (final label in [
-                    'Shop',
-                    'Phone Finder',
-                    'AI Assistant',
-                    'Rate Us',
-                    'Compare',
-                    'Services'
-                  ])
-                    Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                        child: Text(label,
-                            style: const TextStyle(
-                                fontSize: 12, color: Color(0xFFD8DBD3))))
+                  for (final entry in _navItems.entries)
+                    InkWell(
+                        onTap: () => onNavigate(entry.value),
+                        child: Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                            child: Text(entry.key,
+                                style: const TextStyle(
+                                    fontSize: 12, color: Color(0xFFD8DBD3)))))
                 ],
                 const Spacer(),
                 OutlinedButton(
