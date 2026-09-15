@@ -49,6 +49,7 @@ class _AdminAppState extends State<AdminApp> {
               ? const LoadingScreen()
               : !entered
                   ? LandingScreen(
+                      signedIn: api.signedIn,
                       onContinue: () => setState(() => entered = true))
                   : api.signedIn
                       ? AdminShell(api: api)
@@ -82,8 +83,10 @@ class LoadingScreen extends StatelessWidget {
 }
 
 class LandingScreen extends StatelessWidget {
+  final bool signedIn;
   final VoidCallback onContinue;
-  const LandingScreen({super.key, required this.onContinue});
+  const LandingScreen(
+      {super.key, required this.signedIn, required this.onContinue});
   @override
   Widget build(BuildContext context) => Scaffold(
       backgroundColor: charcoal,
@@ -142,7 +145,9 @@ class LandingScreen extends StatelessWidget {
                                 onPressed: onContinue,
                                 style: FilledButton.styleFrom(
                                     minimumSize: const Size(0, 52)),
-                                child: const Text('Continue to sign in →'))),
+                                child: Text(signedIn
+                                    ? 'Continue to dashboard →'
+                                    : 'Continue to sign in →'))),
                       ]))))));
 }
 
