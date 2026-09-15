@@ -1,0 +1,9 @@
+{
+  "name": "gadgethub-customer",
+  "account_id": "5b3d9474ff7920f000574985ec971b1f",
+  "compatibility_date": "2026-09-15",
+  "assets": {
+    "directory": "./build/web",
+    "not_found_handling": "single-page-application"
+  }
+}
