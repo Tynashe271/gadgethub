@@ -102,7 +102,7 @@ export default function StoreApp() {
 
   // Navigation logic
   const navigate = (next: View) => {
-    if (!isAuthenticated && !['home', 'account'].includes(next)) {
+    if (!isAuthenticated && ['admin', 'settings'].includes(next)) {
       if (view !== 'account') viewHistory.current.push(view);
       setView('account');
       setMenuOpen(false);
@@ -121,8 +121,7 @@ export default function StoreApp() {
     while (
       previous &&
       !isAuthenticated &&
-      previous !== 'home' &&
-      previous !== 'account'
+      (['admin', 'settings'] as View[]).includes(previous)
     ) {
       previous = viewHistory.current.pop();
     }
