@@ -1,0 +1,63 @@
+name: Deploy web apps to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'admin_app/**'
+      - 'customer_app/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.9'
+          channel: stable
+
+      - name: Build admin_app
+        working-directory: admin_app
+        run: |
+          flutter pub get
+          flutter build web --base-href /admin/ \
+            --dart-define=API_URL=https://gadgethub-api-production.up.railway.app/api/v1
+
+      - name: Build customer_app
+        working-directory: customer_app
+        run: |
+          flutter pub get
+          flutter build web --base-href /customer/ \
+            --dart-define=API_URL=https://gadgethub-api-production.up.railway.app/api/v1
+
+      - name: Assemble Pages site
+        run: |
+          mkdir -p site/admin site/customer
+          cp -r admin_app/build/web/. site/admin/
+          cp -r customer_app/build/web/. site/customer/
+          echo "apps.tinashenyenyesa.co.zw" > site/CNAME
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
