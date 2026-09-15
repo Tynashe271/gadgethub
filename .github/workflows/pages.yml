@@ -36,14 +36,14 @@ jobs:
         working-directory: admin_app
         run: |
           flutter pub get
-          flutter build web --base-href /admin/ \
+          flutter build web --base-href /gadgethub/admin/ \
             --dart-define=API_URL=https://gadgethub-api-production.up.railway.app/api/v1
 
       - name: Build customer_app
         working-directory: customer_app
         run: |
           flutter pub get
-          flutter build web --base-href /customer/ \
+          flutter build web --base-href /gadgethub/customer/ \
             --dart-define=API_URL=https://gadgethub-api-production.up.railway.app/api/v1
 
       - name: Assemble Pages site
@@ -51,7 +51,6 @@ jobs:
           mkdir -p site/admin site/customer
           cp -r admin_app/build/web/. site/admin/
           cp -r customer_app/build/web/. site/customer/
-          echo "apps.tinashenyenyesa.co.zw" > site/CNAME
 
       - uses: actions/configure-pages@v5
 
