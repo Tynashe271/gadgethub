@@ -45,6 +45,12 @@ class _CustomerExperienceState extends State<CustomerExperience> {
     });
   }
 
+  void backToLanding() => setState(() {
+        entered = false;
+        authOpen = false;
+        page = CustomerPage.home;
+      });
+
   @override
   Widget build(BuildContext context) => AnimatedBuilder(
         animation: widget.api,
@@ -70,11 +76,17 @@ class _CustomerExperienceState extends State<CustomerExperience> {
               api: widget.api,
               page: page,
               onNavigate: open,
-              onSignIn: () => setState(() => authOpen = true));
+              onSignIn: () => setState(() => authOpen = true),
+              onSignOut: backToLanding);
         },
       );
 }
 
+/// The app's own welcome screen - shown before a visitor has entered the
+/// app and again after sign-out. Deliberately not a phone-sized copy of
+/// the website's hero: no desktop nav bar, no marquee, no rotated-phone
+/// mockup. Just a compact, thumb-friendly welcome with a couple of quick
+/// links, built for a single vertical pass rather than a wide layout.
 class LandingScreen extends StatelessWidget {
   final VoidCallback onExplore, onSignIn, onFinder;
   final ValueChanged<CustomerPage> onNavigate;
@@ -87,124 +99,125 @@ class LandingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        body: ListView(children: [
-          const Announcement(),
-          SiteHeader(
-              onHome: () {},
-              onSignIn: onSignIn,
-              onCart: onExplore,
-              onNavigate: onNavigate),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: Center(
-                child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 1180),
-              child: LayoutBuilder(builder: (context, limits) {
-                final compact = limits.maxWidth < 800;
-                final copy = Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Row(mainAxisSize: MainAxisSize.min, children: [
-                        DecoratedBox(
-                            decoration: BoxDecoration(
-                                color: acid, shape: BoxShape.circle),
-                            child: SizedBox(width: 7, height: 7)),
-                        SizedBox(width: 9),
-                        Text("ZIMBABWE'S TRUSTED TECH DESTINATION",
-                            style: TextStyle(
-                                color: acid,
-                                fontSize: 10,
-                                letterSpacing: 1.6,
-                                fontWeight: FontWeight.w800))
-                      ]),
-                      const SizedBox(height: 26),
-                      Text('TECH THAT\nMOVES WITH YOU.',
+        backgroundColor: ink,
+        body: SafeArea(
+          child: Column(children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 10, 12, 0),
+              child: Row(children: [
+                Container(
+                    width: 32,
+                    height: 32,
+                    decoration:
+                        const BoxDecoration(color: acid, shape: BoxShape.circle),
+                    alignment: Alignment.center,
+                    child: const Text('GH',
+                        style: TextStyle(
+                            color: ink, fontSize: 11, fontWeight: FontWeight.w900))),
+                const SizedBox(width: 10),
+                const Text('GADGETHUB',
+                    style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: .5)),
+                const Spacer(),
+                TextButton(
+                    onPressed: onSignIn,
+                    child: const Text('Sign in', style: TextStyle(color: acid))),
+              ]),
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.fromLTRB(28, 16, 28, 30),
+                child: Column(children: [
+                  const SizedBox(height: 18),
+                  Container(
+                      width: 92,
+                      height: 92,
+                      decoration:
+                          const BoxDecoration(color: acid, shape: BoxShape.circle),
+                      alignment: Alignment.center,
+                      child: const Text('G/H',
                           style: TextStyle(
-                              fontSize: compact ? 54 : 86,
-                              height: .84,
-                              letterSpacing: -4,
-                              fontWeight: FontWeight.w900)),
-                      const SizedBox(height: 30),
-                      const Text(
-                          'iPhones, gadgets and electronics—curated with honest advice, flexible ways to pay and support that stays with you.',
-                          style: TextStyle(
-                              color: Color(0xFFB5B8AF),
-                              fontSize: 18,
-                              height: 1.6)),
-                      const SizedBox(height: 32),
-                      Wrap(
-                          spacing: 28,
-                          crossAxisAlignment: WrapCrossAlignment.center,
-                          children: [
-                            SitePrimaryButton(
-                                label: 'Shop now  ↗', onTap: onExplore),
-                            TextButton(
-                                onPressed: onFinder,
-                                child: const Text('Find my phone →',
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        decoration: TextDecoration.underline)))
-                          ]),
-                      const SizedBox(height: 48),
-                      const Row(children: [
-                        Proof(value: '24h', label: 'DISPATCH'),
-                        SizedBox(width: 38),
-                        Proof(value: '12 mo', label: 'WARRANTY'),
-                        SizedBox(width: 38),
-                        Proof(value: '4.9/5', label: 'CUSTOMER RATING')
+                              color: ink, fontSize: 28, fontWeight: FontWeight.w900))),
+                  const SizedBox(height: 28),
+                  const Text('Welcome to\nGadgetHub.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 38,
+                          height: .98,
+                          letterSpacing: -1.4,
+                          fontWeight: FontWeight.w900)),
+                  const SizedBox(height: 14),
+                  const Text(
+                      "Zimbabwe's trusted destination for verified phones, laptops and gadgets - now in your pocket.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Color(0xFFB5B8AF), fontSize: 15, height: 1.5)),
+                  const SizedBox(height: 30),
+                  const Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    TrustBadge(icon: Icons.verified_outlined, label: 'Verified'),
+                    SizedBox(width: 22),
+                    TrustBadge(
+                        icon: Icons.local_shipping_outlined, label: '24h dispatch'),
+                    SizedBox(width: 22),
+                    TrustBadge(icon: Icons.shield_outlined, label: '12mo warranty'),
+                  ]),
+                  const SizedBox(height: 32),
+                  Wrap(
+                      spacing: 10,
+                      runSpacing: 10,
+                      alignment: WrapAlignment.center,
+                      children: [
+                        QuickLinkChip(
+                            label: 'Shop',
+                            onTap: () => onNavigate(CustomerPage.shop)),
+                        QuickLinkChip(label: 'Phone Finder', onTap: onFinder),
+                        QuickLinkChip(
+                            label: 'Compare',
+                            onTap: () => onNavigate(CustomerPage.compare)),
+                        QuickLinkChip(
+                            label: 'Services',
+                            onTap: () => onNavigate(CustomerPage.services)),
                       ]),
-                    ]);
-                return compact
-                    ? Column(children: [
-                        const SizedBox(height: 64),
-                        copy,
-                        const PhoneHero()
-                      ])
-                    : SizedBox(
-                        height: 660,
-                        child: Row(children: [
-                          Expanded(child: copy),
-                          const Expanded(child: PhoneHero())
-                        ]));
-              }),
-            )),
-          ),
-          const LimeMarquee(),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(24, 70, 24, 100),
-            child: Center(
-                child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 1180),
-                    child: LayoutBuilder(builder: (context, limits) {
-                      final compact = limits.maxWidth < 700;
-                      final cards = [
-                        WebsiteOption(
-                            number: '01',
-                            caption: 'Not sure what to buy?',
-                            action: 'Use Phone Finder →',
-                            onTap: onFinder),
-                        WebsiteOption(
-                            number: '02',
-                            caption: 'Choosing between devices?',
-                            action: 'Compare specifications →',
-                            onTap: onExplore),
-                        WebsiteOption(
-                            number: '03',
-                            caption: 'Already own your tech?',
-                            action: 'Trade in or get support →',
-                            onTap: onSignIn)
-                      ];
-                      return compact
-                          ? Column(children: cards)
-                          : Row(
-                              children: cards
-                                  .map((card) => Expanded(child: card))
-                                  .toList());
-                    }))),
-          ),
-        ]),
+                  const SizedBox(height: 34),
+                  SizedBox(
+                      width: double.infinity,
+                      child: SitePrimaryButton(
+                          label: 'Start exploring →', onTap: onExplore)),
+                ]),
+              ),
+            ),
+          ]),
+        ),
       );
+}
+
+class TrustBadge extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  const TrustBadge({super.key, required this.icon, required this.label});
+  @override
+  Widget build(BuildContext context) => Column(children: [
+        Icon(icon, color: acid, size: 20),
+        const SizedBox(height: 6),
+        Text(label,
+            style: const TextStyle(
+                fontSize: 10, color: Color(0xFF999999), letterSpacing: .3))
+      ]);
+}
+
+class QuickLinkChip extends StatelessWidget {
+  final String label;
+  final VoidCallback onTap;
+  const QuickLinkChip({super.key, required this.label, required this.onTap});
+  @override
+  Widget build(BuildContext context) => InkWell(
+      borderRadius: BorderRadius.circular(30),
+      onTap: onTap,
+      child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              border: Border.all(color: const Color(0xFF343730))),
+          child: Text(label, style: const TextStyle(fontSize: 13))));
 }
 
 class Brand extends StatelessWidget {
@@ -239,79 +252,6 @@ class Feature extends StatelessWidget {
                   ]))));
 }
 
-class Announcement extends StatelessWidget {
-  const Announcement({super.key});
-  @override
-  Widget build(BuildContext context) => Container(
-      height: 32,
-      color: acid,
-      alignment: Alignment.center,
-      child: const Text(
-          'FREE DELIVERY IN HARARE ON ORDERS OVER \$100  •  SHOP NOW',
-          style: TextStyle(
-              color: ink,
-              fontSize: 9,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 1.2)));
-}
-
-class SiteHeader extends StatelessWidget {
-  final VoidCallback onHome, onSignIn, onCart;
-  final ValueChanged<CustomerPage> onNavigate;
-  const SiteHeader(
-      {super.key,
-      required this.onHome,
-      required this.onSignIn,
-      required this.onCart,
-      required this.onNavigate});
-  static const _navItems = {
-    'Shop': CustomerPage.shop,
-    'Phone Finder': CustomerPage.finder,
-    'AI Assistant': CustomerPage.assistant,
-    'Rate Us': CustomerPage.feedback,
-    'Compare': CustomerPage.compare,
-    'Services': CustomerPage.services,
-  };
-  @override
-  Widget build(BuildContext context) => Container(
-      height: 86,
-      decoration: const BoxDecoration(
-          border: Border(bottom: BorderSide(color: Color(0xFF30332E)))),
-      padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Center(
-          child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 1180),
-              child: Row(children: [
-                InkWell(onTap: onHome, child: const Brand()),
-                const Spacer(),
-                if (MediaQuery.sizeOf(context).width > 850) ...[
-                  for (final entry in _navItems.entries)
-                    InkWell(
-                        onTap: () => onNavigate(entry.value),
-                        child: Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                            child: Text(entry.key,
-                                style: const TextStyle(
-                                    fontSize: 12, color: Color(0xFFD8DBD3)))))
-                ],
-                const Spacer(),
-                OutlinedButton(
-                    onPressed: onSignIn,
-                    style: OutlinedButton.styleFrom(
-                        shape: const StadiumBorder(),
-                        side: const BorderSide(color: Color(0xFF3B3E38))),
-                    child: const Text('Sign in')),
-                const SizedBox(width: 8),
-                OutlinedButton(
-                    onPressed: onCart,
-                    style: OutlinedButton.styleFrom(
-                        shape: const StadiumBorder(),
-                        side: const BorderSide(color: Color(0xFF3B3E38))),
-                    child: const Text('Cart'))
-              ]))));
-}
-
 class SitePrimaryButton extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
@@ -326,161 +266,6 @@ class SitePrimaryButton extends StatelessWidget {
       child: Text(label));
 }
 
-class Proof extends StatelessWidget {
-  final String value, label;
-  const Proof({super.key, required this.value, required this.label});
-  @override
-  Widget build(BuildContext context) =>
-      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text(value,
-            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-        Text(label,
-            style: const TextStyle(
-                color: Color(0xFF777777), fontSize: 8, letterSpacing: 1))
-      ]);
-}
-
-class PhoneHero extends StatelessWidget {
-  const PhoneHero({super.key});
-  @override
-  Widget build(BuildContext context) => SizedBox(
-      height: 560,
-      child: Stack(alignment: Alignment.center, children: [
-        Container(
-            width: 500,
-            height: 500,
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(color: const Color(0xFF333333)))),
-        Container(
-            width: 380,
-            height: 380,
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(color: const Color(0xFF505744)))),
-        Transform.rotate(
-            angle: .17,
-            child: Container(
-                width: 230,
-                height: 465,
-                padding: const EdgeInsets.all(13),
-                decoration: BoxDecoration(
-                    color: const Color(0xFF161815),
-                    borderRadius: BorderRadius.circular(38),
-                    border:
-                        Border.all(color: const Color(0xFFAEB4A9), width: 7),
-                    boxShadow: const [
-                      BoxShadow(
-                          color: Colors.black,
-                          blurRadius: 70,
-                          offset: Offset(0, 35)),
-                      BoxShadow(color: Color(0x22C8FF38), blurRadius: 70)
-                    ]),
-                child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(25),
-                        gradient: const RadialGradient(
-                            center: Alignment(.3, -.3),
-                            colors: [
-                              Color(0xFFD7FF6A),
-                              Color(0xFF323B20),
-                              Color(0xFF161914)
-                            ],
-                            stops: [
-                              0,
-                              .25,
-                              1
-                            ])),
-                    child: const Stack(children: [
-                      Positioned(
-                          top: 20,
-                          left: 20,
-                          child: Text('09:41', style: TextStyle(fontSize: 10))),
-                      Center(
-                          child: Text('G/H',
-                              style: TextStyle(
-                                  color: acid,
-                                  fontSize: 54,
-                                  fontWeight: FontWeight.w900))),
-                      Positioned(
-                          left: 20,
-                          bottom: 28,
-                          child: Text('THE NEXT\nGENERATION',
-                              style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w800,
-                                  letterSpacing: 2)))
-                    ])))),
-        const Positioned(
-            left: 0, top: 170, child: HeroTag(text: 'VERIFIED DEVICES')),
-        const Positioned(
-            right: 0, bottom: 130, child: HeroTag(text: 'TRADE IN READY'))
-      ]));
-}
-
-class HeroTag extends StatelessWidget {
-  final String text;
-  const HeroTag({super.key, required this.text});
-  @override
-  Widget build(BuildContext context) => Container(
-      padding: const EdgeInsets.all(11),
-      decoration: BoxDecoration(
-          color: const Color(0xFF1D201B),
-          border: Border.all(color: const Color(0xFF454B3D))),
-      child:
-          Text(text, style: const TextStyle(fontSize: 8, letterSpacing: 1.2)));
-}
-
-class LimeMarquee extends StatelessWidget {
-  const LimeMarquee({super.key});
-  @override
-  Widget build(BuildContext context) => Transform.rotate(
-      angle: -.02,
-      child: Container(
-          color: acid,
-          padding: const EdgeInsets.symmetric(vertical: 13),
-          child: const Text(
-              'NEW RELEASES ✦ ECOCASH & ONEMONEY ✦ TRADE IN & UPGRADE ✦ EXPERT SUPPORT ✦ WARRANTY INCLUDED ✦',
-              maxLines: 1,
-              overflow: TextOverflow.clip,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: ink,
-                  fontSize: 11,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 1.3))));
-}
-
-class WebsiteOption extends StatelessWidget {
-  final String number, caption, action;
-  final VoidCallback onTap;
-  const WebsiteOption(
-      {super.key,
-      required this.number,
-      required this.caption,
-      required this.action,
-      required this.onTap});
-  @override
-  Widget build(BuildContext context) => InkWell(
-      onTap: onTap,
-      child: Container(
-          height: 155,
-          padding: const EdgeInsets.all(30),
-          decoration: BoxDecoration(
-              color: const Color(0xFF161815),
-              border: Border.all(color: const Color(0xFF30332E))),
-          child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(number, style: const TextStyle(color: acid, fontSize: 9)),
-            const Spacer(),
-            Text(caption,
-                style: const TextStyle(color: Color(0xFF888888), fontSize: 12)),
-            const SizedBox(height: 12),
-            Text(action,
-                style:
-                    const TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
-          ])));
-}
 
 class AuthScreen extends StatefulWidget {
   final ApiClient api;
@@ -623,13 +408,14 @@ class AppFrame extends StatelessWidget {
   final ApiClient api;
   final CustomerPage page;
   final ValueChanged<CustomerPage> onNavigate;
-  final VoidCallback onSignIn;
+  final VoidCallback onSignIn, onSignOut;
   const AppFrame(
       {super.key,
       required this.api,
       required this.page,
       required this.onNavigate,
-      required this.onSignIn});
+      required this.onSignIn,
+      required this.onSignOut});
   String get title => const {
         CustomerPage.home: 'Home',
         CustomerPage.shop: 'Shop',
@@ -661,6 +447,7 @@ class AppFrame extends StatelessWidget {
             page: page,
             onNavigate: onNavigate,
             onSignIn: onSignIn,
+            onSignOut: onSignOut,
             closeDrawer: !wide);
         return Scaffold(
           appBar: AppBar(
@@ -713,7 +500,7 @@ class WebsiteSidebar extends StatelessWidget {
   final ApiClient api;
   final CustomerPage page;
   final ValueChanged<CustomerPage> onNavigate;
-  final VoidCallback onSignIn;
+  final VoidCallback onSignIn, onSignOut;
   final bool closeDrawer;
   const WebsiteSidebar(
       {super.key,
@@ -721,6 +508,7 @@ class WebsiteSidebar extends StatelessWidget {
       required this.page,
       required this.onNavigate,
       required this.onSignIn,
+      required this.onSignOut,
       required this.closeDrawer});
   @override
   Widget build(BuildContext context) => SafeArea(
@@ -793,7 +581,7 @@ class WebsiteSidebar extends StatelessWidget {
                   if (closeDrawer) Navigator.pop(context);
                   if (api.signedIn) {
                     await api.logout();
-                    onNavigate(CustomerPage.home);
+                    onSignOut();
                   } else {
                     onSignIn();
                   }
