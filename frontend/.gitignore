@@ -30,6 +30,11 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# .env.production has no secrets (same NEXT_PUBLIC_API_URL already public in
+# wrangler.jsonc) and must be committed - vinext inlines NEXT_PUBLIC_* into the
+# client bundle from process.env at build time, which only reads dotenv files,
+# never wrangler.jsonc's runtime vars.
+!.env.production
 
 # vercel
 .vercel
